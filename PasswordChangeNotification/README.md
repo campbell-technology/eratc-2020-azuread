@@ -11,7 +11,7 @@ There are a few variables you need to change for this script to work. They're al
 - **SMTPSvr** - This will almost always be left as the default of *ketsmail.us*.
 - **domainController** - Your district's D1 controller. 
 - **searchBase** - Where to search for accounts.
-- ** scriptRunInterval** - Set this to the same frequency as the script is run via scheduled task. This is so you don't get two notifications for the same account.
+- **scriptRunInterval** - Set this to the same frequency as the script is run via scheduled task. This is so you don't get two notifications for the same account.
 
 ### How to use
 Create a scheduled task on your Windows server to run this script once you edit it. Use the following parameters:
