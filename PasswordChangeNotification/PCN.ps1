@@ -6,16 +6,16 @@ $mailFrom = "CloudOnlyAccount@districtkyschools.onmicrosoft.com"
 $SMTPSvr = "ketsmail.us"
  
 # FQDN of your district's D1 controller
-$domainController = "ed091addc1.campbell.ketsds.net"
+$domainController = "edXXXaddc1.district.ketsds.net"
  
 # Specify your LDAP search base. This will usually be DC=district,DC=ketsds,DC=net
-$searchBase = "DC=campbell,DC=ketsds,DC=net"
+$searchBase = "DC=district,DC=ketsds,DC=net"
  
 # Script run interval (in minutes)
 # If you're running this script every 4 hours set this to 240 (minutes). This way when the script runs again in 4 hours
 # you won't get double notifications
 $scriptRunInterval = 10
-
+ 
 # End configuration, don't change anything below
  
  
