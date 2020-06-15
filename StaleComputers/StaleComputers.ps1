@@ -50,7 +50,7 @@ $stale | Set-ADComputer -Enabled $false
 $stale | Move-ADObject -TargetPath $TargetOU
 
 # Generate HTML reporting to send in an email
-$liststale = $stale | Sort Name | ConvertTo-HTML -Head $layout Name, DistinguishedName, PasswordLastSet -Body "<H2>The following machines have not contacted the domain in the past 120 days and have been disabled:</H2>"
+$liststale = $stale | Sort Name | ConvertTo-HTML -Head $layout Name, DistinguishedName, PasswordLastSet -Body "<H2>The following machines have not contacted the domain in the past $CutoffDays days and have been disabled:</H2>"
 $countstale = $stale | group-object computer | ConvertTo-HTML -Head $layout Count -Body "<H2>Total Stale Machine Count</H2>" 
 
 # Send the email notification
